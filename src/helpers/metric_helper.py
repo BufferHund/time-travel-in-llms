@@ -59,7 +59,8 @@ class ICL:
         self,
         reference,
         candidate,
-        model="gpt-4-0613",
+        #model="gpt-4-0613",
+        model="deepseek-ai/DeepSeek-R1",
         prompt_type="gpt4_icl_prompt",
     ):
         icl_prompt = self.icl_eval.get_prompt(prompt_type=prompt_type)

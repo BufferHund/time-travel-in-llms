@@ -3,7 +3,12 @@ from openai import OpenAI
 
 class OpenAIClient:
     def __init__(self):
-        self.client = OpenAI()
+        #self.client = OpenAI()
+         self.client = OpenAI(
+            base_url="https://api.siliconflow.cn/v1/",
+            api_key="sk-vvosuyprpyfjsmdsrgsnvvyvrvboyvehkyimihbnzjqsnuap"
+        )
+
 
     def get_text(
         self,
