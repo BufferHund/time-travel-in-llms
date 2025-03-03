@@ -2,7 +2,7 @@ import evaluate
 
 from helpers.logging_config import configure_logger
 from prompts.icl_evaluation import ICLEvaluation
-from services.openai_api import OpenAIClient
+from services.openai_api_icleval import OpenAIClientICLEval
 
 logger = configure_logger(__name__)
 
@@ -53,7 +53,7 @@ class Rouge:
 class ICL:
     def __init__(self):
         self.icl_eval = ICLEvaluation()
-        self.openai_client = OpenAIClient()
+        self.openai_client = OpenAIClientICLEval()
 
     def score(
         self,
