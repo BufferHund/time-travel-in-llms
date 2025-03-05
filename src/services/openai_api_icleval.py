@@ -5,8 +5,8 @@ class OpenAIClientICLEval:
     def __init__(self):
         #self.client = OpenAI()
          self.client = OpenAI(
-            base_url="https://api.siliconflow.cn/v1/",
-            api_key="sk-vvosuyprpyfjsmdsrgsnvvyvrvboyvehkyimihbnzjqsnuap"
+            base_url="https://api.tomchat.fun/v1/",
+            api_key="sk-MaFueRTZVuI2APNnicccsEqZRjqukFbFKx1Soxf0FawpHpkh"
         )
 
 
