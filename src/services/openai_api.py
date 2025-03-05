@@ -5,8 +5,8 @@ class OpenAIClient:
     def __init__(self):
         #self.client = OpenAI()
          self.client = OpenAI(
-            base_url="https://api.siliconflow.cn/v1/",
-            api_key="sk-vvosuyprpyfjsmdsrgsnvvyvrvboyvehkyimihbnzjqsnuap"
+            base_url="https://api.deepseek.com/v1/",
+            api_key="sk-b17391fd064a42bfa099ec41325de6aa"
         )
 
 
