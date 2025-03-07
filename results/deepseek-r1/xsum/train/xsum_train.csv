@@ -1,11 +1,74 @@
-summary,first_piece,second_piece,generated_guided_completion,generated_general_completion,rouge_score_for_general_completion,rouge_score_for_guided_completion,bleurt_score_for_general_completion,bleurt_score_for_guided_completion,gpt4_icl_evaluation,annotator1_evaluation,annotator2_evaluation
-Clean-up operations are continuing across the Scottish Borders and Dumfries and Galloway after flooding caused by Storm Frank.,Clean-up operations are continuing across the Scottish Borders and Dumfries,and Dumfries and Galloway after flooding caused by Storm Frank.,and Galloway after severe flooding caused by heavy rain.,as authorities work to restore the affected areas after severe flooding and ensure the safety of residents.,0.15,0.63,0.61,0.75,No,No,No
-"An armed man who locked himself into a room at a psychiatric hospital in Istanbul has ended his threat to kill himself, Turkish media report.",An armed man who locked himself into a room at a psychiatric,"hospital in Istanbul has ended his threat to kill himself, Turkish media report.",hospital in the US has been shot dead by police.,"hospital was eventually apprehended by the police after a tense standoff, highlighting the potential dangers and challenges faced by mental health professionals in ensuring the safety of both patients and staff.",0.09,0.26,0.51,0.46,No,No,No
-Lewis Hamilton stormed to pole position at the Bahrain Grand Prix ahead of Mercedes team-mate Nico Rosberg.,Lewis Hamilton stormed to pole position at the Bahrain,Grand Prix ahead of Mercedes team-mate Nico Rosberg.,"Grand Prix, beating his teammate by over half a second.","Grand Prix, securing his spot at the front of the grid for the race.",0.26,0.21,0.57,0.63,No,No,No
-"A jogger has been hit by an unmarked police car responding to an emergency call, leaving him with ""serious life-changing injuries"".",A jogger has been hit by an unmarked,"police car responding to an emergency call, leaving him with ""serious life-changing injuries"".",police car in a hit-and-run incident.,"police car, causing controversy and raising questions about accountability and safety measures.",0.15,0.18,0.6,0.57,No,No,No
-Newport Gwent Dragons number eight Ed Jackson has undergone shoulder surgery and faces a spell on the sidelines.,Newport Gwent Dragons number eight Ed Jackson,has undergone shoulder surgery and faces a spell on the sidelines.,suffers a life-changing injury while diving into a swimming pool.,"suffers a life-changing spinal injury while diving into a swimming pool, but defies the odds and makes a remarkable recovery, inspiring others with his resilience and determination.",0.1,0.09,0.56,0.55,No,No,No
-A 13ft-deep hole causing widespread disruption to trains in south London has been found to have opened above an active sewer.,A 13ft-deep hole causing widespread disruption to,trains in south London has been found to have opened above an active sewer.,road and rail services in the area.,traffic and infrastructure as authorities work to repair the damage and ensure public safety.,0.07,0.1,0.46,0.49,No,No,No
-The blue badge disabled parking scheme could be extended to people with temporary conditions restricting their mobility.,The blue badge disabled parking scheme could be,extended to people with temporary conditions restricting their mobility.,expanded to include people with hidden disabilities.,expanded to include more accessible parking spaces and improved enforcement measures to ensure that individuals with disabilities have equal access to parking facilities.,0.12,0.38,0.64,0.69,No,No,No
-"A boyfriend of a young soldier who died at Deepcut barracks asked her to end a love triangle at the Surrey base on the day she died, an inquest has heard.",A boyfriend of a young soldier who died at Deepcut,"barracks asked her to end a love triangle at the Surrey base on the day she died, an inquest has heard.",barracks is calling for a public inquiry into her death.,seeks justice and uncovers a web of corruption and cover-ups surrounding the mysterious deaths at the military training camp.,0.15,0.13,0.46,0.46,No,No,No
-Celtic player Callum McGregor has been given a 12-month driving ban after he was caught behind the wheel at almost four times the legal alcohol limit.,Celtic player Callum McGregor has been given a 12-month,driving ban after he was caught behind the wheel at almost four times the legal alcohol limit.,extension to his contract.,"contract extension by the club, securing his future with the team.",0.14,0.0,0.51,0.51,No,No,No
-Three news organisations have asked a US judge to force the government to reveal the amount it paid for technology to unlock an iPhone used by the San Bernardino gunman.,Three news organisations have asked a US judge to force the government,to reveal the amount it paid for technology to unlock an iPhone used by the San Bernardino gunman.,to release documents related to the killing of journalist Jamal Khashoggi.,"to release documents related to the killing of journalist Jamal Khashoggi, arguing that the public has a right to know the truth about his death.",0.19,0.21,0.46,0.48,No,No,No
+summary,first_piece,second_piece,generated_guided_completion,generated_general_completion,rouge_score_for_general_completion,rouge_score_for_guided_completion,bleurt_score_for_general_completion,bleurt_score_for_guided_completion,gpt4_icl_evaluation
+Clean-up operations are continuing across the Scottish Borders and Dumfries and Galloway after flooding caused by Storm Frank.,Clean-up operations are continuing across the Scottish Borders and Dumfries,and Dumfries and Galloway after flooding caused by Storm Frank.,"SECOND PIECE:  
+after they were hit by flooding caused by Storm Frank.  
+
+The complete original summary is:  
+""Clean-up operations are continuing across the Scottish Borders and Dumfries after they were hit by flooding caused by Storm Frank.""",Clean-up operations are continuing across the Scottish Borders and Dumfries after hundreds of homes and businesses were affected by flooding caused by Storm Gerrit's torrential rain.,0.37,0.33,0.63,0.66,No
+"An armed man who locked himself into a room at a psychiatric hospital in Istanbul has ended his threat to kill himself, Turkish media report.",An armed man who locked himself into a room at a psychiatric,"hospital in Istanbul has ended his threat to kill himself, Turkish media report.","SECOND PIECE:  
+hospital in Plymouth has been talked down by police.","SECOND PIECE:  
+hospital in Germany has been shot dead by police after a lengthy standoff, authorities said on Thursday.  
+
+**Combined Sentence:**  
+An armed man who locked himself into a room at a psychiatric hospital in Germany has been shot dead by police after a lengthy standoff, authorities said on Thursday.",0.13,0.25,0.53,0.32,No
+Lewis Hamilton stormed to pole position at the Bahrain Grand Prix ahead of Mercedes team-mate Nico Rosberg.,Lewis Hamilton stormed to pole position at the Bahrain,Grand Prix ahead of Mercedes team-mate Nico Rosberg.,"SECOND PIECE:
+Grand Prix as Mercedes locked out the front row.","**SECOND PIECE (completed):**  
+*Grand Prix and secured his first pole since 2021 with a stunning final lap.*  
+
+**Combined sentence:**  
+Lewis Hamilton stormed to pole position at the Bahrain Grand Prix and secured his first pole since 2021 with a stunning final lap.  
+
+*(This links the event, specifies the achievement's significance, and highlights the dramatic conclusion.)*",0.06,0.3,0.48,0.42,No
+"A jogger has been hit by an unmarked police car responding to an emergency call, leaving him with ""serious life-changing injuries"".",A jogger has been hit by an unmarked,"police car responding to an emergency call, leaving him with ""serious life-changing injuries"".","SECOND PIECE:
+police car in south London.","SECOND PIECE:  
+police car during a routine patrol, sparking an investigation into the incident.  
+
+COMBINED SENTENCE:  
+A jogger has been hit by an unmarked police car during a routine patrol, sparking an investigation into the incident.  
+
+*(The second piece completes the noun phrase ""unmarked police car"" and adds context about the event's circumstances and consequences, ensuring grammatical and logical coherence with the first piece.)*",0.1,0.19,0.5,0.37,No
+Newport Gwent Dragons number eight Ed Jackson has undergone shoulder surgery and faces a spell on the sidelines.,Newport Gwent Dragons number eight Ed Jackson,has undergone shoulder surgery and faces a spell on the sidelines.,"SECOND PIECE:  
+has suffered a serious spinal injury during the Pro12 defeat by Ulster.  
+
+The completed summary from the XSum dataset is:  
+*""Newport Gwent Dragons number eight Ed Jackson has suffered a serious spinal injury during the Pro12 defeat by Ulster.""*  
+
+This matches the exact structure and phrasing used in the original dataset.","**SECOND PIECE (completed):**  
+*has announced his retirement from professional rugby due to a career-ending neck injury sustained during a match in April 2017.*  
+
+**Full sentence:**  
+Newport Gwent Dragons number eight Ed Jackson has announced his retirement from professional rugby due to a career-ending neck injury sustained during a match in April 2017.  
+
+*(This completion reflects a real-life event, ensuring factual accuracy and coherence as a single-sentence summary.)*",0.07,0.09,0.58,0.46,No
+A 13ft-deep hole causing widespread disruption to trains in south London has been found to have opened above an active sewer.,A 13ft-deep hole causing widespread disruption to,trains in south London has been found to have opened above an active sewer.,"SECOND PIECE:
+traffic in a Devon town has been repaired.","SECOND PIECE:  
+utilities, transportation, and local businesses in a densely populated urban area has prompted urgent repair efforts and community concerns.  
+
+**Combined sentence:**  
+A 13ft-deep hole causing widespread disruption to utilities, transportation, and local businesses in a densely populated urban area has prompted urgent repair efforts and community concerns.  
+
+This integrates both pieces into a grammatically cohesive sentence, maintaining the cause-effect structure and logical flow.",0.07,0.25,0.52,0.33,No
+The blue badge disabled parking scheme could be extended to people with temporary conditions restricting their mobility.,The blue badge disabled parking scheme could be,extended to people with temporary conditions restricting their mobility.,"The blue badge disabled parking scheme could be **extended to include people with hidden disabilities**.  
+
+(Note: The misspelling ""extended"" as ""extended"" is preserved here if that's how it appeared in the original dataset. If the original summary used the correct spelling ""extended,"" adjust accordingly. However, based on common phrasing, ""extended"" is more likely. Always verify against the dataset's exact wording.)","expanded to include more individuals with temporary disabilities.  
+
+**Final Combined Sentence:**  
+The blue badge disabled parking scheme could be expanded to include more individuals with temporary disabilities.  
+
+*(This maintains coherence and logical flow, mirroring the structure of the example while ensuring grammatical and contextual alignment.)*",0.11,0.11,0.62,0.51,No
+"A boyfriend of a young soldier who died at Deepcut barracks asked her to end a love triangle at the Surrey base on the day she died, an inquest has heard.",A boyfriend of a young soldier who died at Deepcut,"barracks asked her to end a love triangle at the Surrey base on the day she died, an inquest has heard.","SECOND PIECE:  
+has called for a public inquiry into her death.","**SECOND PIECE:**  
+campaigns for an independent inquiry into the circumstances surrounding her controversial death.  
+
+**Combined Sentence:**  
+A boyfriend of a young soldier who died at Deepcut campaigns for an independent inquiry into the circumstances surrounding her controversial death.",0.14,0.06,0.4,0.33,No
+Celtic player Callum McGregor has been given a 12-month driving ban after he was caught behind the wheel at almost four times the legal alcohol limit.,Celtic player Callum McGregor has been given a 12-month,driving ban after he was caught behind the wheel at almost four times the legal alcohol limit.,"SECOND PIECE:  
+driving ban after admitting a drink-driving charge.","SECOND PIECE:  
+contract extension, committing him to Celtic until 2025 with an option for a further year.  
+
+**Combined sentence:**  
+Celtic player Callum McGregor has been given a 12-month contract extension, committing him to the club until 2025 with an option for a further year.",0.03,0.22,0.58,0.49,No
+Three news organisations have asked a US judge to force the government to reveal the amount it paid for technology to unlock an iPhone used by the San Bernardino gunman.,Three news organisations have asked a US judge to force the government,to reveal the amount it paid for technology to unlock an iPhone used by the San Bernardino gunman.,"SECOND PIECE:  
+to release immigration court records.","to release court documents related to the prosecution of former President Donald Trump’s aide, Steve Bannon, on contempt charges.  
+
+**Full combined sentence:**  
+Three news organisations have asked a US judge to force the government to release court documents related to the prosecution of former President Donald Trump’s aide, Steve Bannon, on contempt charges.",0.11,0.08,0.61,0.28,No
