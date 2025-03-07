@@ -1,11 +1,79 @@
-sentence1,sentence2,label,generated_guided_completion,generated_general_completion,rouge_score_for_general_completion,rouge_score_for_guided_completion,bleurt_score_for_general_completion,bleurt_score_for_guided_completion,gpt4_icl_evaluation,annotator1_evaluation,annotator2_evaluation
-Jane knocked on Susan's door but she did not answer.,Susan did not answer.,1 (entailment),Jane knocked on Susan's door and she did not answer.,"Jane tried to get Susan's attention by knocking on her door, but Susan chose not to respond.",0.18,0.53,0.5,0.55,No,No,No
-"The lawyer asked the witness a question, but he was reluctant to repeat it.",The lawyer was reluctant to repeat it.,1 (entailment),The witness was hesitant to repeat the question asked by the lawyer.,The witness refused to repeat the question.,0.43,0.42,0.47,0.64,No,No,No
-The delivery truck zoomed by the school bus because it was going so slow.,The school bus was going so slow.,1 (entailment),The delivery truck passed the school bus because it was moving at a very slow speed.,The delivery truck was going at a much faster speed.,0.35,0.43,0.38,0.48,No,No,No
-"The cat was lying by the mouse hole waiting for the mouse, but it was too cautious.",The mouse was too cautious.,1 (entailment),The mouse was being very careful.,The mouse never came out of the hole.,0.31,0.55,0.38,0.61,No,No,No
-"The dog chased the cat, which ran up a tree. It waited at the top.",The cat waited at the top.,1 (entailment),The cat climbed down from the tree and the dog patiently waited at the bottom.,"The cat ran up a tree, so the dog waited at the top.",0.63,0.48,0.49,0.52,No,No,No
-"Susan knew that Ann's son had been in a car accident, so she told her about it.",Ann told her about it.,0 (not entailment),Susan told Ann about the car accident involving her son.,Susan wanted to make sure Ann was aware of the situation.,0.13,0.27,0.5,0.54,No,No,No
-The large ball crashed right through the table because it was made of styrofoam.,The large ball was made of styrofoam.,0 (not entailment),The table was not strong enough to withstand the impact of the large ball made of styrofoam.,The table was not strong enough to withstand the impact.,0.24,0.5,0.32,0.56,No,No,No
-"The older students were bullying the younger ones, so we rescued them.",We rescued the older students.,0 (not entailment),"We did not leave the younger students to be bullied by the older ones, so we saved them.","The older students were not bullying the younger ones, so we rescued them.",0.33,0.26,0.59,0.57,No,No,No
-Sam's drawing was hung just above Tina's and it did look much better with another one below it.,Tina's drawing did look much better with another one below it.,0 (not entailment),Sam's drawing was not hung just above Tina's and it did not look much better with another one below it.,Tina's drawing was not as good as Sam's.,0.27,0.65,0.57,0.57,No,No,No
-"George got free tickets to the play, but he gave them to Eric, because he was not particularly eager to see it.",Eric was not particularly eager to see it.,0 (not entailment),George gave the free tickets to Eric.,Eric gladly accepted the tickets and went to see the play.,0.32,0.13,0.53,0.4,No,No,No
+sentence1,sentence2,label,generated_guided_completion,generated_general_completion,rouge_score_for_general_completion,rouge_score_for_guided_completion,bleurt_score_for_general_completion,bleurt_score_for_guided_completion,gpt4_icl_evaluation
+Jane knocked on Susan's door but she did not answer.,Susan did not answer.,1 (entailment),"SENTENCE 2:
+Susan did not answer.","SENTENCE 2:  
+Susan was not present to respond to Jane.  
+
+**Explanation**:  
+The label ""entailment"" requires that SENTENCE 2 must logically follow from SENTENCE 1. Since Jane knocked and received no answer, the most direct entailment is that Susan was unavailable to respond (e.g., not present), which is a reasonable conclusion from the stated lack of response. Alternative phrasings like ""Susan ignored Jane"" would introduce new assumptions (e.g., Susan heard the knock), violating entailment.",0.08,0.8,0.53,0.79,No
+"The lawyer asked the witness a question, but he was reluctant to repeat it.",The lawyer was reluctant to repeat it.,1 (entailment),"SENTENCE 2:  
+The lawyer was reluctant to repeat the question.  
+
+**Explanation:**  
+The label ""1 (entailment)"" indicates that SENTENCE 2 must logically resolve the pronoun ""he"" in SENTENCE 1. Here, ""he"" refers to ""the lawyer"" (the subject of the first clause), as lawyers typically control questioning in legal contexts. This matches the original WNLI dataset instance.","SENTENCE 2:  
+The witness did not want to restate the question posed by the lawyer.  
+
+**Explanation**:  
+The label ""entailment"" requires that SENTENCE 2 must logically follow from SENTENCE 1. In SENTENCE 1, the witness's reluctance to ""repeat"" the question directly entails that they ""did not want to restate"" it. The phrasing preserves the core meaning while avoiding ambiguity about who was reluctant.",0.14,0.19,0.48,0.43,No
+The delivery truck zoomed by the school bus because it was going so slow.,The school bus was going so slow.,1 (entailment),"SENTENCE 2:  
+The school bus was going so slow.","SENTENCE 2:  
+The school bus was moving too slowly, prompting the delivery truck to overtake it.  
+
+**Explanation**:  
+The label ""entailment"" (1) means SENTENCE 2 must logically follow from SENTENCE 1. The original sentence states that the delivery truck passed the school bus *because it was going so slow*. SENTENCE 2 rephrases this by explicitly naming the school bus as the slow entity (""too slowly"") and directly linking its speed to the truck's action (""overtake""), preserving the causal relationship. This ensures logical consistency and fulfills the entailment requirement.",0.15,0.88,0.52,0.86,No
+"The cat was lying by the mouse hole waiting for the mouse, but it was too cautious.",The mouse was too cautious.,1 (entailment),"SENTENCE 2:  
+The mouse was too cautious, so it didn't come out of the hole.  
+
+**Explanation:**  
+This completion resolves the ambiguous pronoun ""it"" in SENTENCE 1 by explicitly referencing ""the mouse,"" maintaining the entailment relationship (label 1). The logic follows that the mouse's cautiousness (stated in SENTENCE 2) directly explains why the cat's waiting was unsuccessful (implied in SENTENCE 1).","SENTENCE 2:  
+The mouse remained hidden inside the hole, avoiding the cat's trap.  
+
+**Explanation**:  
+The label ""entailment"" (1) requires that SENTENCE 2 must logically follow from SENTENCE 1. Since SENTENCE 1 states the mouse was ""too cautious,"" this directly implies the mouse avoided danger (staying hidden), which SENTENCE 2 explicitly confirms. The cat waiting and the mouse’s caution create a cause-effect relationship that satisfies entailment.",0.14,0.15,0.49,0.4,No
+"The dog chased the cat, which ran up a tree. It waited at the top.",The cat waited at the top.,1 (entailment),"SENTENCE 2:
+The cat waited at the top.
+
+**Explanation:**  
+WNLI (Winograd NLI) focuses on pronoun resolution. In SENTENCE 1, ""It"" refers to ""the cat"" (the entity that ""ran up a tree"" and is logically at the top). Replacing ""It"" with ""The cat"" in SENTENCE 2 preserves coreference and creates an entailment relationship (label 1). The answer matches the dataset’s intended resolution.","SENTENCE 2:  
+The cat escaped from the dog by climbing the tree.  
+
+**Explanation**:  
+The label ""entailment"" (1) means SENTENCE 2 must logically follow from SENTENCE 1. In SENTENCE 1, the cat runs up a tree to avoid the chasing dog and waits safely at the top. SENTENCE 2 directly states the outcome (escape via climbing the tree), which is an unavoidable conclusion based on the events described.",0.14,0.18,0.53,0.4,No
+"Susan knew that Ann's son had been in a car accident, so she told her about it.",Ann told her about it.,0 (not entailment),"SENTENCE 2:  
+Ann told Susan about the accident.  
+
+**Explanation**:  
+WNLI examples often involve pronoun ambiguity. The original sentence (SENTENCE 1) implies *Susan told Ann* (""she"" refers to Susan, ""her"" refers to Ann). For label 0 (no entailment), SENTENCE 2 typically reverses the roles to create a non-entailed statement. The exact match from the dataset is: *""Ann told Susan about the accident.""*","SENTENCE 2:  
+However, Susan later realized Ann had already heard the news from another source.  
+
+**Explanation**: The label 0 (not entailment) is satisfied because SENTENCE 2 introduces new information that contradicts the implication of SENTENCE 1. While SENTENCE 1 states that Susan *told* Ann about the accident, SENTENCE 2 clarifies that Ann was already aware, weakening the causal link and creating a non-entailment relationship.",0.09,0.12,0.48,0.48,No
+The large ball crashed right through the table because it was made of styrofoam.,The large ball was made of styrofoam.,0 (not entailment),"SENTENCE 2:  
+The ball was made of styrofoam.  
+
+**Explanation**:  
+In WNLI, the task involves resolving ambiguous pronouns. Here, ""it"" in SENTENCE 1 refers to the **table** (since a styrofoam table would explain why the ball crashed through it). However, the label `0` (not entailment) indicates that SENTENCE 2 explicitly contradicts the correct resolution. Thus, SENTENCE 2 falsely attributes ""made of styrofoam"" to the ball, matching the dataset's structure for non-entailment cases.","SENTENCE 2:  
+The large ball was made of durable steel, allowing it to remain undamaged after the collision.  
+
+**Explanation**:  
+The label ""0 (not entailment)"" means SENTENCE 2 cannot be logically concluded from SENTENCE 1. In SENTENCE 1, the table (not the ball) is implied to be made of styrofoam, which explains why the ball crashed through it. SENTENCE 2 introduces a contradictory detail (the ball being steel) that directly opposes the premise of SENTENCE 1, creating a non-entailment relationship.",0.16,0.15,0.48,0.38,No
+"The older students were bullying the younger ones, so we rescued them.",We rescued the older students.,0 (not entailment),"SENTENCE 2:  
+We rescued them because they were causing trouble.  
+
+This matches the WNLI dataset instance where the pronoun ""them"" is ambiguously resolved. The label is **0** because the premise (SENTENCE 1) does not entail that ""they"" (older students) were rescued for ""causing trouble""—the correct resolution of ""them"" in SENTENCE 1 refers to the younger students, making SENTENCE 2 contradictory.","SENTENCE 2:  
+**we later discovered they had orchestrated the confrontation themselves.**  
+
+ANALYSIS:  
+This continuation creates a **non-entailment relationship** (label 0) because SENTENCE 2 introduces new information that directly contradicts the initial implication of ""rescue"" in SENTENCE 1. The revelation that the younger students fabricated the bullying undermines the premise of the rescue, making the two sentences logically incompatible rather than causally connected.",0.09,0.15,0.41,0.46,No
+Sam's drawing was hung just above Tina's and it did look much better with another one below it.,Tina's drawing did look much better with another one below it.,0 (not entailment),"SENTENCE 2:  
+Tina's drawing was hung just above Sam's and it did look much better with another one below it.  
+
+This formulation swaps the positions of Sam's and Tina's drawings while maintaining the same structure, creating a non-entailment scenario (label 0) since the original claim about Sam's drawing's appearance depends on its positional context relative to Tina's.","SENTENCE 2:  
+""Tina's drawing was unanimously voted as the most impressive piece in the entire exhibition.""  
+
+**Explanation**: The label ""0 (not entailment)"" is satisfied because SENTENCE 1 states that Sam's drawing appeared better due to its placement above Tina's and another drawing below it. However, SENTENCE 2 introduces a contradictory claim that Tina's drawing was the most praised, which cannot be logically inferred from SENTENCE 1. The two sentences conflict rather than align.",0.16,0.31,0.48,0.54,No
+"George got free tickets to the play, but he gave them to Eric, because he was not particularly eager to see it.",Eric was not particularly eager to see it.,0 (not entailment),"SENTENCE 2:  
+Eric was not particularly eager to see it.  
+
+This matches the WNLI dataset's construction where the pronoun reference is switched to create a non-entailment example (label 0). The original sentence 2 in the dataset would attribute the lack of eagerness to Eric rather than George, creating a coreference ambiguity that breaks entailment.","SENTENCE 2: **George later regretted his decision and bought tickets to watch the play himself.**
+
+**Explanation:**  
+The label ""0 (not entailment)"" indicates that SENTENCE 2 cannot be logically inferred from SENTENCE 1. SENTENCE 1 explicitly states George was not eager to see the play and gave the tickets to Eric. SENTENCE 2 introduces a contradiction by suggesting George changed his stance (regretting his decision and buying tickets), which directly opposes the original reasoning in SENTENCE 1. This creates a non-entailment relationship.",0.11,0.25,0.56,0.52,No
