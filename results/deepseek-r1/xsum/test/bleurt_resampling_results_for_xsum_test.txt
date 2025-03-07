@@ -1,3 +1,3 @@
 Metric               p-value    Significance
 --------------------------------------------------
-ROUGE score:         0.321      Not Significant
+BLEURT score:        0.989      Not Significant
