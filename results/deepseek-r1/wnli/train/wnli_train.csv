@@ -1,11 +1,75 @@
-sentence1,sentence2,label,generated_guided_completion,generated_general_completion,rouge_score_for_general_completion,rouge_score_for_guided_completion,bleurt_score_for_general_completion,bleurt_score_for_guided_completion,gpt4_icl_evaluation,annotator1_evaluation,annotator2_evaluation
-I can't cut that tree down with that axe; it is too small.,The axe is too small.,1 (entailment),The axe is not strong enough to cut down the tree.,The axe is not suitable for cutting down the tree.,0.4,0.37,0.5,0.49,No,No,No
-Fred watched TV while George went out to buy groceries. After an hour he got back.,George got back.,1 (entailment),"After an hour, George returned home.",George went out to buy groceries for an hour.,0.17,0.22,0.41,0.6,No,No,No
-Joe has sold his house and bought a new one a few miles away. He will be moving out of it on Thursday.,He will be moving out of The old house on Thursday.,1 (entailment),Joe will be moving into his new house on Thursday.,Joe will no longer be living in his current house after Thursday.,0.35,0.57,0.66,0.74,No,No,No
-"When Tatyana reached the cabin, her mother was sleeping. She was careful not to disturb her, undressing and climbing back into her berth.","Tatyana was careful not to disturb her, undressing and climbing back into her berth.",1 (entailment),Tatyana made sure not to wake her mother up as she undressed and got back into her own bed.,"Tatyana wanted to avoid waking her mother up, so she quietly undressed and climbed back into her berth.",0.5,0.48,0.67,0.64,No,No,No
-Carol believed that Rebecca regretted that she had stolen the watch.,Carol believed that Rebecca regretted that Rebecca had stolen the watch.,1 (entailment),Rebecca regretted that she had stolen the watch.,Rebecca did steal the watch.,0.37,0.74,0.43,0.68,No,No,No
-James asked Robert for a favor but he was refused.,Robert was refused.,0 (not entailment),James asked Robert for a favor but Robert refused him.,James asked Robert for a favor and he was granted.,0.31,0.31,0.51,0.55,No,No,No
-The foxes are getting in at night and attacking the chickens. I shall have to kill them.,I shall have to kill The chickens.,0 (not entailment),I will have no choice but to eliminate the foxes.,"The foxes are causing harm to the chickens, so it is necessary for me to take action.",0.25,0.47,0.56,0.48,No,No,No
-"Jackson was greatly influenced by Arnold, though he lived two centuries later.",Arnold lived two centuries later.,0 (not entailment),Jackson did not live two centuries later.,Jackson admired Arnold's military strategies and incorporated them into his own tactics.,0.11,0.5,0.23,0.33,No,No,No
-"The dog chased the cat, which ran up a tree. It waited at the bottom.",The cat waited at the bottom.,0 (not entailment),The cat did not come down from the tree.,"The dog chased the cat, which ran up a tree. The dog barked loudly.",0.3,0.4,0.44,0.52,No,No,No
-"The signs over the shops' doors had pictures that indicated what work was done inside. Although more and more people were learning how to read, each artisan still had signs, not wishing to lose a possible patron merely because he happened to be illiterate.","Each artisan still had signs, not wishing to lose a possible patron merely because the artisan happened to be illiterate.",0 (not entailment),"Each artisan wanted to ensure that potential customers could understand their services, so they continued to use signs even as literacy rates increased.","The artisans wanted to ensure that everyone, regardless of their literacy level, could easily identify the services they offered.",0.1,0.19,0.5,0.57,No,No,No
+sentence1,sentence2,label,generated_guided_completion,generated_general_completion,rouge_score_for_general_completion,rouge_score_for_guided_completion,bleurt_score_for_general_completion,bleurt_score_for_guided_completion,gpt4_icl_evaluation
+I can't cut that tree down with that axe; it is too small.,The axe is too small.,1 (entailment),"SENTENCE 2:  
+That axe is too small.  
+
+The entailment (label 1) arises because SENTENCE 2 resolves the ambiguity in SENTENCE 1 by explicitly stating the referent of ""it"" (the axe being too small, not the tree), making the conclusion logically necessary.","SENTENCE 2:  
+The axe is too small to effectively cut down the tree.  
+
+**Explanation**:  
+The label ""entailment"" (1) indicates that SENTENCE 1 logically guarantees the truth of SENTENCE 2. SENTENCE 1 states that the axe’s small size makes it ineffective for cutting down the tree. SENTENCE 2 directly rephrases this reasoning, confirming the causal relationship between the axe’s size and its inadequacy for the task. This satisfies the entailment relationship.",0.13,0.17,0.54,0.45,No
+Fred watched TV while George went out to buy groceries. After an hour he got back.,George got back.,1 (entailment),"SENTENCE 2:
+George got back after an hour.","SENTENCE 2:  
+**George returned after buying groceries.**
+
+**Explanation**:  
+The label ""entailment"" (1) means SENTENCE 2 must logically follow from SENTENCE 1. In SENTENCE 1, ""he got back"" refers to George (the last mentioned male subject), and his action (""buying groceries"") is completed. SENTENCE 2 directly restates this outcome without contradiction, fulfilling entailment.",0.11,0.55,0.51,0.53,No
+Joe has sold his house and bought a new one a few miles away. He will be moving out of it on Thursday.,He will be moving out of The old house on Thursday.,1 (entailment),"SENTENCE 2:  
+Joe will be moving out of his old house on Thursday.
+
+This matches the WNLI dataset's entailment structure where ""it"" in SENTENCE 1 unambiguously refers to the old house (since one typically moves *out* of a sold property and *into* a newly purchased one). The label ""1"" confirms this coreference resolution is explicitly supported by the text.","SENTENCE 2:  
+Joe will be moving out of his old house on Thursday.  
+
+**Explanation**:  
+The label ""1 (entailment)"" means SENTENCE 2 must be a logical consequence of SENTENCE 1. Since SENTENCE 1 states Joe sold his house and will move out of ""it"" (the sold house) on Thursday, SENTENCE 2 explicitly resolves ""it"" to ""his old house,"" directly entailed by the context of selling and relocating.",0.23,0.25,0.53,0.49,No
+"When Tatyana reached the cabin, her mother was sleeping. She was careful not to disturb her, undressing and climbing back into her berth.","Tatyana was careful not to disturb her, undressing and climbing back into her berth.",1 (entailment),"SENTENCE 2:  
+Tatyana was careful not to disturb her mother.  
+
+This matches the WNLI dataset instance exactly. The pronoun ""she"" in SENTENCE 1 refers to Tatyana, and SENTENCE 2 explicitly resolves this coreference, creating an entailment relationship (label 1).","SENTENCE 2:  
+**Therefore, her mother continued sleeping undisturbed.**  
+
+This conclusion directly follows from SENTENCE 1, as Tatyana’s careful actions (avoiding disturbance) logically result in her mother remaining asleep, satisfying the entailment relationship.",0.13,0.3,0.52,0.36,No
+Carol believed that Rebecca regretted that she had stolen the watch.,Carol believed that Rebecca regretted that Rebecca had stolen the watch.,1 (entailment),"SENTENCE 2:
+Carol believed that Rebecca regretted that Rebecca had stolen the watch.","SENTENCE 2:  
+Carol believed Rebecca had stolen the watch.  
+
+**Explanation**:  
+The label ""entailment"" (1) requires that SENTENCE 2 is logically necessary if SENTENCE 1 is true. Since SENTENCE 1 states that Carol believes Rebecca *regretted stealing the watch*, this inherently includes the belief that Rebecca *did steal the watch*. Regret over an action presupposes the action occurred, so SENTENCE 2 directly follows from SENTENCE 1.",0.24,0.92,0.52,0.86,Yes (exact match)
+James asked Robert for a favor but he was refused.,Robert was refused.,0 (not entailment),"SENTENCE 2:  
+James refused to help.  
+
+**Explanation**:  
+WNLI involves resolving ambiguous pronouns to determine entailment. In SENTENCE 1, ""he was refused"" could mean either *James* (the asker) or *Robert* (the one asked) was refused. For **label 0 (not entailment)**, SENTENCE 2 must contradict the correct resolution. The correct entailment (label 1) would attribute the refusal to *Robert* (""Robert refused""). The label 0 example flips this, asserting ""James refused,"" which does not follow from SENTENCE 1. This matches the dataset’s structure for non-entailment cases.","SENTENCE 2: Robert had a habit of refusing requests.  
+
+**Explanation**: The label ""0 (not entailment)"" indicates that SENTENCE 2 cannot be logically concluded from SENTENCE 1. While SENTENCE 1 states that James was refused by Robert in a specific instance, SENTENCE 2 generalizes Robert’s behavior as habitual. This generalization is not supported by the single event described in SENTENCE 1, creating a non-entailment relationship.",0.09,0.07,0.48,0.41,No
+The foxes are getting in at night and attacking the chickens. I shall have to kill them.,I shall have to kill The chickens.,0 (not entailment),"SENTENCE 2:
+I shall have to kill the chickens. 
+
+This matches the WNLI dataset's structure where the second sentence explicitly resolves the ambiguous pronoun ""them"" to ""chickens"" (rather than foxes), creating a non-entailment scenario (label 0). The original SENTENCE 1 leaves ""them"" ambiguous, but SENTENCE 2 specifies the chickens as the target, contradicting the likely intended referent (foxes) in the first sentence.","SENTENCE 2:  
+I will humanely relocate the chickens to a safer coop where foxes cannot reach them.  
+
+**Explanation**: The label 0 (not entailment) applies because Sentence 1 concludes with killing ""them"" (presumably the foxes), while Sentence 2 proposes a non-lethal solution focused on protecting the chickens. There is no logical consistency between killing the foxes (S1) and relocating the chickens (S2), as these are opposing resolutions to the problem.",0.1,0.2,0.45,0.53,No
+"Jackson was greatly influenced by Arnold, though he lived two centuries later.",Arnold lived two centuries later.,0 (not entailment),"SENTENCE 2:
+Arnold lived two centuries later.
+
+This matches the WNLI dataset construction where the non-entailment (label 0) arises from switching the pronoun reference from Jackson (implied by context) to Arnold, creating a contradictory statement despite the original sentence structure.","SENTENCE 2:  
+""Arnold frequently cited Jackson's groundbreaking theories in his own work.""  
+
+**Explanation**:  
+This creates a **contradiction** (a type of ""not entailment"" labeled as 0). Sentence 1 states Jackson was influenced by Arnold, implying Arnold preceded Jackson. Sentence 2 reverses this relationship by suggesting Arnold relied on Jackson’s work, which is impossible if Jackson lived later. The contradiction ensures no logical entailment exists.",0.09,0.22,0.5,0.43,No
+"The dog chased the cat, which ran up a tree. It waited at the bottom.",The cat waited at the bottom.,0 (not entailment),"SENTENCE 2:  
+The cat waited at the bottom.  
+
+**Explanation:**  
+WNLI involves resolving ambiguous pronouns in Winograd Schemas. In SENTENCE 1, ""It"" refers to the dog (the one waiting), as dogs can't climb trees. SENTENCE 2 flips the referent to the cat, creating a contradiction (label 0). The exact original completion is ""The cat waited at the bottom.""","SENTENCE 2:  
+The dog eventually climbed the tree after the cat.  
+
+**Explanation**:  
+The label ""0 (not entailment)"" indicates that SENTENCE 2 cannot be logically concluded from SENTENCE 1. In SENTENCE 1, the dog waits at the bottom of the tree, implying it does not follow the cat up. SENTENCE 2 contradicts this by claiming the dog climbed the tree, creating a non-entailment relationship.",0.14,0.19,0.53,0.47,No
+"The signs over the shops' doors had pictures that indicated what work was done inside. Although more and more people were learning how to read, each artisan still had signs, not wishing to lose a possible patron merely because he happened to be illiterate.","Each artisan still had signs, not wishing to lose a possible patron merely because the artisan happened to be illiterate.",0 (not entailment),"SENTENCE 2:  
+Each artisan still had signs, not wishing to lose a possible patron merely because he happened to be illiterate.  
+
+**Explanation**:  
+In the WNLI dataset, this example tests pronoun resolution. The label `0` (not entailment) arises because the referent of ""he"" in SENTENCE 2 is ambiguous—it could imply either the *artisan* or the *patron* being illiterate. Since SENTENCE 1 does not definitively resolve this ambiguity, there is no entailment. The provided SENTENCE 2 matches the exact structure and wording from the dataset.","SENTENCE 2:  
+""However, the artisans eventually removed all pictorial signs and replaced them with elaborate written descriptions, confident that literacy had become universal.""  
+
+**Explanation**: The label ""0 (not entailment)"" indicates that SENTENCE 2 does not logically follow from SENTENCE 1. The original text states that artisans *retained* pictorial signs to avoid excluding illiterate patrons, even as literacy grew. SENTENCE 2 contradicts this by claiming they abandoned pictorial signs entirely, assuming universal literacy—a direct reversal of the premise in SENTENCE 1. This creates a lack of entailment.",0.09,0.35,0.52,0.51,No
