@@ -45,6 +45,19 @@ FIRST PIECE:
 
 SECOND PIECE:
 """,
+            "gsm8k":"""INSTURCTION:
+You are provided with the FIRST PIECE of a question-answer pair from the {split_name} split of the {dataset_name} dataset.
+The question is devided into FIRST PIECE and SECOND PIECE. Finish the SECOND PIECE of the question as EXACTLY appeared in the dataset.
+ONLY rely on the original form of the question in the dataset to finish the SECOND PIECE.
+
+FIRST PIECE:
+{first_piece}
+
+ANSWER:
+{answer}
+
+SECOND PIECE:
+""",
         }
 
     def get_prompt(self, prompt_type):

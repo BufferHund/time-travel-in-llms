@@ -19,7 +19,7 @@ class ArgumentParser:
             "--task",
             required=True,
             type=str,
-            choices=["cls", "nli", "sum", "xsum"],
+            choices=["cls", "nli", "sum", "xsum","gsm8k"],
             help="The task corresponding to the dataset. "
             "For NLI and classification tasks, label column should be specified. "
             "(Choices: %(choices)s)",
